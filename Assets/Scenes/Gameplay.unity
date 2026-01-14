@@ -424,6 +424,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -560,6 +561,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -2913,6 +2915,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4525,6 +4528,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -4946,6 +4950,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -5798,6 +5803,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -5996,6 +6002,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -6847,6 +6854,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -7387,17 +7395,47 @@ MonoBehaviour:
     - {fileID: 11400000, guid: da328a4d8f26cfb4780919cecb9f1311, type: 2}
   - elemenTiapGolongan:
     - {fileID: 11400000, guid: cec6d01e517686f4bb0097dec60d8082, type: 2}
+    - {fileID: 11400000, guid: ae9013b41df9e32409e0690c5c3a6cd8, type: 2}
+    - {fileID: 11400000, guid: 2e237ce37142acc4b975443579585049, type: 2}
+    - {fileID: 11400000, guid: 505624ca4c49bde449ebb4fd90e0c239, type: 2}
+    - {fileID: 11400000, guid: b56e6791f6e65ce47970151d97ba7228, type: 2}
+    - {fileID: 11400000, guid: 5b5e6362a40ca1240bde0fb156b77dc5, type: 2}
   - elemenTiapGolongan:
     - {fileID: 11400000, guid: 07f6a1d19757b1a4497d4ea9849a2a1b, type: 2}
+    - {fileID: 11400000, guid: 4466851b01492e449a3d05e6a7933962, type: 2}
+    - {fileID: 11400000, guid: 9768880d92df4534199f768cc88b127c, type: 2}
+    - {fileID: 11400000, guid: 4a1206da1f7d4e24a857be6220c4ec70, type: 2}
+    - {fileID: 11400000, guid: 65bcaac8e9a218f4c8b04c9fa4f545ff, type: 2}
+    - {fileID: 11400000, guid: bc2b68426ddfa694a8a9e23e9db885ff, type: 2}
   - elemenTiapGolongan:
     - {fileID: 11400000, guid: 9d6bb350fe832544eb4cbc0fda010f9b, type: 2}
+    - {fileID: 11400000, guid: 6b35a656377f31a44aee8513e33f2496, type: 2}
+    - {fileID: 11400000, guid: a1c5bab42ab8cac48a1a5d6b891639f2, type: 2}
+    - {fileID: 11400000, guid: 494dec8bb98669340b82c13d8cdfa738, type: 2}
+    - {fileID: 11400000, guid: 95e04902fe0dde04891c6e6f1fc390fe, type: 2}
+    - {fileID: 11400000, guid: 2ae95c65f311496449ab9ee13d8e38cb, type: 2}
   - elemenTiapGolongan:
     - {fileID: 11400000, guid: c204e3095dc07e645b22e8c79f61b592, type: 2}
+    - {fileID: 11400000, guid: 90d4139e73f7e144a92c6bb8009b31f6, type: 2}
+    - {fileID: 11400000, guid: c23c1627310e7564eb95a63b4bd949b0, type: 2}
+    - {fileID: 11400000, guid: 2fa865c0493d5e840971b29c3fa0264b, type: 2}
+    - {fileID: 11400000, guid: e769cf495a4b77a41b9c6eea391d25ed, type: 2}
+    - {fileID: 11400000, guid: 2a6bebb44f8e4ad4ead592e1ab2c217f, type: 2}
   - elemenTiapGolongan:
+    - {fileID: 11400000, guid: baa47c7d22dbca94a84b9581ec44e034, type: 2}
+    - {fileID: 11400000, guid: 426c712df9b2e2c428c907d4735eeb1f, type: 2}
+    - {fileID: 11400000, guid: 9c19c55f61105de46a93cc4a5fed5f25, type: 2}
     - {fileID: 11400000, guid: 8df9fbe51d45348408b3905ef66f2f33, type: 2}
+    - {fileID: 11400000, guid: faa9b50f0d8130747b15c5373b38c8da, type: 2}
+    - {fileID: 11400000, guid: 23e747765bfc9e348b63e716017b6a16, type: 2}
   - elemenTiapGolongan:
     - {fileID: 11400000, guid: 3c62d36648d777a40a0c0b61ddd04105, type: 2}
     - {fileID: 11400000, guid: b482609c5e04e5949ac4321ee6b49cce, type: 2}
+    - {fileID: 11400000, guid: 34339078f6264954e8df53ba1bf5a708, type: 2}
+    - {fileID: 11400000, guid: 94eff002ed4da6943a5bac4627fa5be0, type: 2}
+    - {fileID: 11400000, guid: 85e1e96e83a5c0641815e3db5da722a9, type: 2}
+    - {fileID: 11400000, guid: 9e8f8a5e99f51ea449aed6e6603960a5, type: 2}
+    - {fileID: 11400000, guid: 33f00b558d8c09143b27182bb55a33dc, type: 2}
   semuaElements: []
 --- !u!114 &677115734
 MonoBehaviour:
@@ -7814,6 +7852,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -8598,6 +8637,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -9851,6 +9891,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -10089,6 +10130,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -10225,6 +10267,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -11045,6 +11088,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -12617,6 +12661,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -14003,6 +14048,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -14252,6 +14298,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -14490,6 +14537,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -15508,6 +15556,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -15644,6 +15693,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -15780,6 +15830,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -16170,6 +16221,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -16773,6 +16825,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -17793,7 +17846,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1804484692
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18546,6 +18599,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -19175,6 +19229,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -20014,6 +20069,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -20648,6 +20704,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -21003,6 +21060,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
@@ -21910,6 +21968,7 @@ MonoBehaviour:
   m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
+  m_characterHorizontalScale: 1
   m_wordSpacing: 0
   m_lineSpacing: 0
   m_lineSpacingMax: 0
