@@ -3,33 +3,33 @@ using UnityEngine;
 public class ElementPanelHandler : MonoBehaviour
 {
     public static ElementPanelHandler ElementPanelInstance;
-    public GameObject[] ElementColumns;
-    public GameObject ElementPanel;
+    public GameObject[] elementColumns;
+    public GameObject elementPanel;
 
 
     void Start()
     {
-        ElementPanel.SetActive(false);
+        elementPanel.SetActive(false);
         ColumnUpdate();
     }
 
-    public void ColumnUpdate()
+    private void ColumnUpdate()
     {
-        for (int i = 0; i < ElementColumns.Length; i++)
+        for (int i = 0; i < elementColumns.Length; i++)
         {
-            ElementColumns[i].GetComponent<CanvasGroup>().alpha = (i < GameManager.instance.currentLevel) ? 1 : 0.5f;
+            elementColumns[i].GetComponent<CanvasGroup>().alpha = (i < gameManager.Instance.currentLevel) ? 1 : 0.5f;
         }
     }
     
     public void ToggleElementPanel()
     {
-        if (ElementPanel.activeSelf)
+        if (elementPanel.activeSelf)
         {
-            ElementPanel.SetActive(false);
+            elementPanel.SetActive(false);
         }
         else
         {
-            ElementPanel.SetActive(true);
+            elementPanel.SetActive(true);
             ColumnUpdate();
         }
     }

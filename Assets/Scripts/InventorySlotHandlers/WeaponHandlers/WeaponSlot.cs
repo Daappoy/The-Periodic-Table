@@ -3,7 +3,7 @@ using UnityEngine.EventSystems;
 
 public class WeaponSlot : ItemSlot, IDropHandler
 {
-    SlotType slotType = SlotType.Weapon;
+    // SlotType slotType = SlotType.Weapon;
     public void OnDrop(PointerEventData eventData)
     {
         Debug.Log("Weapon dropped on slot");

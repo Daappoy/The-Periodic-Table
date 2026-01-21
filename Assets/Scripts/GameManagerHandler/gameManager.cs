@@ -1,7 +1,7 @@
 using UnityEngine;
 
 
-public class GameManager : MonoBehaviour
+public class gameManager : MonoBehaviour
 {
     public enum GameState
     {
@@ -11,16 +11,16 @@ public class GameManager : MonoBehaviour
     }
     public GameState currentState;
     public ElementSlotManager elementSlotManager;
-    public static GameManager instance;
+    public static gameManager Instance;
     public int currentLevel = 2;
     public int enemiesDefeated = 0;
     public int score = 0;
 
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
         else
         {
@@ -34,11 +34,11 @@ public class GameManager : MonoBehaviour
         //what happens when an enemy is destroyed
         enemiesDefeated++;
         score += 10;
-
+        ScoreManager.Instance.TotalScore = score;
         //ngececk kalo dah bisa level up
         if (enemiesDefeated == 3)
         {
-            levelUp();
+            LevelUp();
         }
     }
 
@@ -48,7 +48,7 @@ public class GameManager : MonoBehaviour
         enemiesDefeated = 0;
     }
     [ContextMenu("Manual Level Up")]
-    public void levelUp()
+    public void LevelUp()
     {
         currentLevel++;
         enemiesDefeated = 0;

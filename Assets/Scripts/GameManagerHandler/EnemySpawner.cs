@@ -73,7 +73,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SetAttributes(Enemy enemy)
     {
-        enemy.golongan = Random.Range(1, GameManager.instance.currentLevel + 1);
+        enemy.golongan = Random.Range(1, gameManager.Instance.currentLevel + 1);
 
         if (enemy.golongan == 2)
         {

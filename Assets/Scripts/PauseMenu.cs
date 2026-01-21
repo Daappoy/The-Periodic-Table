@@ -3,7 +3,7 @@ using UnityEngine.UI;
 
 public class PauseMenu : MonoBehaviour
 {
-    public GameManager.GameState currentState;
+    public gameManager.GameState currentState;
     public static bool GameIsPaused = false;
     public GameObject pauseMenuUI;
     public Button[] BackToMainMenuButton;
@@ -24,13 +24,13 @@ public class PauseMenu : MonoBehaviour
 
     public void PauseGame()
     {
-        if (GameIsPaused && !(currentState == GameManager.GameState.GameOver))
+        if (GameIsPaused && !(currentState == gameManager.GameState.GameOver))
         {
             Time.timeScale = 1f;
             pauseMenuUI.SetActive(false);
             GameIsPaused = false;
         }
-        else if (!GameIsPaused && !(currentState == GameManager.GameState.GameOver))
+        else if (!GameIsPaused && !(currentState == gameManager.GameState.GameOver))
         {
             Time.timeScale = 0f;
             pauseMenuUI.SetActive(true);

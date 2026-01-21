@@ -5,14 +5,14 @@ using UnityEngine.EventSystems;
 
 public class ElementSlot : ItemSlot
 {
-    SlotType slotType = SlotType.Element;
+    // SlotType slotType = SlotType.Element;
     public int slotLevel;
     [SerializeField] public bool isTampered = false;
 
 
     public GameObject spawnItem(GameObject itemPrefab)
     {
-        if (!isFull && slotLevel <= GameManager.instance.currentLevel)
+        if (!isFull && slotLevel <= gameManager.Instance.currentLevel)
         {
             //spawn dulu itemnya
             GameObject itemInstance = Instantiate(itemPrefab, transform.position, Quaternion.identity);
@@ -34,7 +34,7 @@ public class ElementSlot : ItemSlot
         {
             Debug.Log("Slot is already filled");
         }
-        else if (slotLevel > GameManager.instance.currentLevel)
+        else if (slotLevel > gameManager.Instance.currentLevel)
         {
             Debug.Log("Level too low to spawn this slot of elements");
         }
