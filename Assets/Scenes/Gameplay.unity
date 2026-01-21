@@ -7490,7 +7490,7 @@ MonoBehaviour:
     - {fileID: 403790191}
     - {fileID: 409746528}
     spawnPos: {fileID: 15770390}
-  BulletPrefab: {fileID: 2477327628581749045, guid: 25e2c7cf8890f7b418dcb86d9a8e6a83, type: 3}
+  bulletPrefab: {fileID: 2477327628581749045, guid: 25e2c7cf8890f7b418dcb86d9a8e6a83, type: 3}
   shootDelay: 0.5
   elementSlotManager: {fileID: 677115733}
   enemySpawner: {fileID: 1539369103}
@@ -7506,7 +7506,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73aab83a2fc76e04491e3883b40c177b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ElementPanelHandler
-  ElementColumns:
+  elementColumns:
   - {fileID: 507276398}
   - {fileID: 1771744910}
   - {fileID: 1482325019}
@@ -7515,7 +7515,7 @@ MonoBehaviour:
   - {fileID: 1559409304}
   - {fileID: 1428932503}
   - {fileID: 1147955122}
-  ElementPanel: {fileID: 235181336}
+  elementPanel: {fileID: 235181336}
 --- !u!114 &677115736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7530,10 +7530,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
   currentState: 0
   pauseMenuUI: {fileID: 1096818172}
-  BackToMainMenuButton:
-  - {fileID: 417535154}
-  - {fileID: 1283982810}
-  RetryButton: {fileID: 1996032966}
+  backToMainMenuButton: []
+  retryButton: {fileID: 1996032966}
 --- !u!114 &677115737
 MonoBehaviour:
   m_ObjectHideFlags: 0

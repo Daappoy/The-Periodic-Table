@@ -4,7 +4,7 @@ using UnityEngine;
 public class SceneLoader : MonoBehaviour
 {
     public static SceneLoader Instance;
-    public Animator SceneTransisionAnimator;
+    public Animator sceneTransitionAnimator;
 
     public void Start()
     {
@@ -19,14 +19,15 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    public IEnumerator TransisionToScene(int transisionTime,string sceneName)
+    public IEnumerator TransitionToScene(int transitionTime,string sceneName)
     {
-        Debug.Log("Transision Started");
-        SceneTransisionAnimator.SetTrigger("Start");
+        Debug.Log("Transition Started");
+        sceneTransitionAnimator.SetTrigger("Start");
 
-        yield return new WaitForSeconds(transisionTime + 0.5f);
+        yield return new WaitForSeconds(transitionTime + 0.5f);
         UnityEngine.SceneManagement.SceneManager.LoadScene(sceneName);
         Time.timeScale = 1f;
-        SceneTransisionAnimator.SetTrigger("End");
+        sceneTransitionAnimator.SetTrigger("End");
+        Debug.Log("Transition Ended");
     }
 }

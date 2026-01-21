@@ -17,7 +17,7 @@ public class ElementPanelHandler : MonoBehaviour
     {
         for (int i = 0; i < elementColumns.Length; i++)
         {
-            elementColumns[i].GetComponent<CanvasGroup>().alpha = (i < gameManager.Instance.currentLevel) ? 1 : 0.5f;
+            elementColumns[i].GetComponent<CanvasGroup>().alpha = (i < gameManager.Instance.currentLevel) ? 1 : 0.33f;
         }
     }
     

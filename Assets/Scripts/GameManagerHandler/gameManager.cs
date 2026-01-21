@@ -34,7 +34,7 @@ public class gameManager : MonoBehaviour
         //what happens when an enemy is destroyed
         enemiesDefeated++;
         score += 10;
-        ScoreManager.Instance.TotalScore = score;
+        ScoreManager.Instance.totalScore = score;
         //ngececk kalo dah bisa level up
         if (enemiesDefeated == 3)
         {

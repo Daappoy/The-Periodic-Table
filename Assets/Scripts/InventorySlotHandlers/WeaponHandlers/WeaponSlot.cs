@@ -9,7 +9,7 @@ public class WeaponSlot : ItemSlot, IDropHandler
         Debug.Log("Weapon dropped on slot");
         if (eventData.pointerDrag != null && currentItemCount < itemLimit)
         {
-            insertItem(eventData);
+            InsertItem(eventData);
         }
         else
         {
@@ -18,7 +18,7 @@ public class WeaponSlot : ItemSlot, IDropHandler
         }
     }
 
-    public void insertItem(PointerEventData eventData)
+    public void InsertItem(PointerEventData eventData)
     {
         // Set reference ke slot ini
         DragDrop dragDrop = eventData.pointerDrag.GetComponent<DragDrop>();

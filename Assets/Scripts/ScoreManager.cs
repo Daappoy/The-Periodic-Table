@@ -3,7 +3,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public static ScoreManager Instance;
-    public int TotalScore = 0;
+    public int totalScore = 0;
     void Start()
     {
         if(Instance == null)
@@ -18,22 +18,22 @@ public class ScoreManager : MonoBehaviour
 
         if (PlayerPrefs.HasKey("PlayerScore"))
         {
-            TotalScore = PlayerPrefs.GetInt("PlayerScore");
+            totalScore = PlayerPrefs.GetInt("PlayerScore");
         }
         else
         {
-            TotalScore = 0;
+            totalScore = 0;
         }
     }
     //note: ini bakal di save sebagai json later
     public void SaveScore()
     {
-        PlayerPrefs.SetInt("PlayerScore", TotalScore);
+        PlayerPrefs.SetInt("PlayerScore", totalScore);
 
         int highScore = PlayerPrefs.GetInt("HighScore", 0);
-        if (TotalScore > highScore)
+        if (totalScore > highScore)
         {
-            PlayerPrefs.SetInt("HighScore", TotalScore);
+            PlayerPrefs.SetInt("HighScore", totalScore);
         }
         PlayerPrefs.Save();
     }

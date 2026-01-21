@@ -11,7 +11,7 @@ public class SlotGroupWeapon
 public class WeaponSlotManager : MonoBehaviour
 {
     public SlotGroupWeapon[] weaponSlotGroups;
-    public GameObject BulletPrefab;
+    public GameObject bulletPrefab;
     public float shootDelay = 0.5f;
     public ElementSlotManager elementSlotManager;
     public EnemySpawner enemySpawner;
@@ -38,7 +38,7 @@ public class WeaponSlotManager : MonoBehaviour
                 if (slot.isFull && slot.currentItem != null && slot.currentElement != null)
                 {
                     // Spawn bullet
-                    GameObject bulletInstance = Instantiate(BulletPrefab, group.spawnPos.position, group.spawnPos.rotation);
+                    GameObject bulletInstance = Instantiate(bulletPrefab, group.spawnPos.position, group.spawnPos.rotation);
 
                     // Assign data elemen ke bullet
                     Bullet bulletScript = bulletInstance.GetComponent<Bullet>();

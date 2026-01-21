@@ -1214,7 +1214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e084131bf45121408a2a07774f129d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SceneLoader
-  SceneTransisionAnimator: {fileID: 205802997}
+  sceneTransitionAnimator: {fileID: 205802997}
 --- !u!4 &530413888
 Transform:
   m_ObjectHideFlags: 0
@@ -1849,7 +1849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 197709c4191b7c940803cebe6b48ce99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScoreManager
-  TotalScore: 0
+  totalScore: 0
 --- !u!4 &860545746
 Transform:
   m_ObjectHideFlags: 0
@@ -2116,7 +2116,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::MainMenu
   mainMenuUI: {fileID: 803091642}
-  PlayButton: {fileID: 40942833}
+  playButton: {fileID: 40942833}
   settingsUI: {fileID: 1989437004}
   highScoreText: {fileID: 859834632}
 --- !u!4 &884600876

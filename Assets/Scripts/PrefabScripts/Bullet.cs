@@ -29,8 +29,8 @@ public class Bullet : MonoBehaviour
         Enemy enemy = hitInfo.GetComponent<Enemy>();
         if (enemy != null)
         {
-            Debug.Log("Enemy found - Golongan: " + enemy.golongan + ", Metalic: " + enemy.metalic);
-            Debug.Log("Bullet element - Golongan: " + element.Golongan + ", Metalic: " + element.Metalic);
+            // Debug.Log("Enemy found - Golongan: " + enemy.golongan + ", Metalic: " + enemy.metalic);
+            // Debug.Log("Bullet element - Golongan: " + element.Golongan + ", Metalic: " + element.Metalic);
 
             if (gameManager.Instance.currentLevel >= 4)
             {
