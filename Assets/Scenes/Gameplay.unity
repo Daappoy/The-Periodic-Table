@@ -14949,6 +14949,8 @@ MonoBehaviour:
   - {fileID: 48572116}
   - {fileID: 1610271587}
   - {fileID: 554153888}
+  warningSlots: []
+  gameOverSlots: []
   enemyPrefab: {fileID: 4140544772470470203, guid: 73a7bda57988a2d4cb3c37c9694bdce8, type: 3}
   spawnChance: 0.5
 --- !u!4 &1539369104
