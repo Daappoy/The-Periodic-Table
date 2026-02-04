@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemySpawner : MonoBehaviour
 {
     public Transform[] enemyColumns;
+    public Transform[] spawnSlots;
     public Transform[] warningSlots;
     public Transform[] gameOverSlots;
     public GameObject enemyPrefab;
@@ -12,13 +13,14 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         CacheSpecialSlotsOnce();
-        SpawnEnemies();
+        InitiateSpawnEnemies();
     }
 
     private void CacheSpecialSlotsOnce()
     {
         if (enemyColumns == null || enemyColumns.Length == 0)
         {
+            spawnSlots = System.Array.Empty<Transform>();
             warningSlots = System.Array.Empty<Transform>();
             gameOverSlots = System.Array.Empty<Transform>();
             return;
@@ -26,6 +28,7 @@ public class EnemySpawner : MonoBehaviour
         
         warningSlots = new Transform[enemyColumns.Length];
         gameOverSlots = new Transform[enemyColumns.Length];
+        spawnSlots = new Transform[enemyColumns.Length];
         
         for (int c = 0; c < enemyColumns.Length; c++)
         {
@@ -44,31 +47,46 @@ public class EnemySpawner : MonoBehaviour
 
             warningSlots[c] = column.GetChild(count - 2);
             gameOverSlots[c] = column.GetChild(count - 1);
+            spawnSlots[c] = column.GetChild(0);
         }
     }
 
     [ContextMenu("Spawn Step")]
-    public void SpawnEnemies()
+    public void InitiateSpawnEnemies()
     {
+        if (enemyColumns == null)
+            return;
+
         foreach (Transform column in enemyColumns)
         {
-            int slotCount = column.childCount;
-            Transform targetSlot = null;
+            if (column == null)
+                continue;
 
-            for (int i = 0; i < slotCount; i++)
+            int slotCount = column.childCount;
+            if (slotCount == 0)
+                continue;
+
+            // decide first whether to spawn for this column
+            if (Random.value > spawnChance)
+                continue;
+
+            // shift enemies down to free slot 0 (one step), starting from bottom
+            for (int i = slotCount - 1; i >= 1; i--)
             {
                 Transform slot = column.GetChild(i);
-                if (IsSlotEmpty(slot))
+                Transform above = column.GetChild(i - 1);
+
+                if (IsSlotEmpty(slot) && !IsSlotEmpty(above) && above.childCount > 0)
                 {
-                    targetSlot = slot;
-                    break;
+                    Transform child = above.GetChild(0);
+                    child.SetParent(slot, true);
+                    child.position = slot.position;
                 }
             }
 
-            if (targetSlot == null)
-                continue;
-
-            if (Random.value <= spawnChance)
+            // spawn at slot 0 if now empty
+            Transform targetSlot = column.GetChild(0);
+            if (IsSlotEmpty(targetSlot))
             {
                 SpawnEnemy(targetSlot);
             }
@@ -89,7 +107,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SetAttributes(Enemy enemy)
     {
-        enemy.golongan = Random.Range(1, gameManager.Instance.currentLevel + 1);
+        enemy.golongan = Random.Range(1, GameManager.Instance.currentLevel + 1);
 
         if (enemy.golongan == 2)
         {
@@ -98,5 +116,31 @@ public class EnemySpawner : MonoBehaviour
         }
 
         enemy.metalic = Random.Range(0, 2) == 0;
+    }
+    
+    //check if there is any enemy in the special slots
+    //check on warning slot
+    public bool IsEnemyInWarningSlot()
+    {
+        foreach (Transform slot in warningSlots)
+        {
+            if (slot != null && slot.childCount > 0)
+            {
+                return true;
+            }
+        }
+        return false;
+    }
+    //check on game over slot
+    public bool IsEnemyInGameOverSlot()
+    {
+        foreach (Transform slot in gameOverSlots)
+        {
+            if (slot != null && slot.childCount > 0)
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

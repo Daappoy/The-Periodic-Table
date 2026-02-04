@@ -83,7 +83,7 @@ public class ElementSlotManager : MonoBehaviour
         foreach (Elemen element in Elements)
         {
             //ini dimana dia ngecek kalo levelnya sesuai apa enggak untuk dimasukin ke slot
-            if (element.elementLevel <= gameManager.Instance.currentLevel)
+            if (element.elementLevel <= GameManager.Instance.currentLevel)
             {
                 availableElements.Add(element);
             }
@@ -94,7 +94,7 @@ public class ElementSlotManager : MonoBehaviour
     //ini function buat masukkin data ke item yang di spawn
     public void SpawnElementWithData(ElementSlot slot, Elemen elementData)
     {
-        if (elementData.elementLevel <= gameManager.Instance.currentLevel && slot.slotLevel <= gameManager.Instance.currentLevel)
+        if (elementData.elementLevel <= GameManager.Instance.currentLevel && slot.slotLevel <= GameManager.Instance.currentLevel)
         {
             GameObject spawnedItem = slot.spawnItem(elementPrefab);
 
@@ -196,7 +196,7 @@ public class ElementSlotManager : MonoBehaviour
     {
         for (int i = 0; i < slotGroups.Length; i++)
         {
-            if (i < gameManager.Instance.currentLevel)
+            if (i < GameManager.Instance.currentLevel)
             {
                 SlotGroupElements group = slotGroups[i];
                 for (int j = 0; j < group.slots.Length; j++)

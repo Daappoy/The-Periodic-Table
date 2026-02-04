@@ -32,14 +32,14 @@ public class Bullet : MonoBehaviour
             // Debug.Log("Enemy found - Golongan: " + enemy.golongan + ", Metalic: " + enemy.metalic);
             // Debug.Log("Bullet element - Golongan: " + element.Golongan + ", Metalic: " + element.Metalic);
 
-            if (gameManager.Instance.currentLevel >= 4)
+            if (GameManager.Instance.currentLevel >= 4)
             {
                 // Check if bullet element matches enemy properties
                 if (element != null && element.Golongan == enemy.golongan && element.Metalic == enemy.metalic)
                 {
                     Debug.Log("Match! Both objects should be destroyed.");
                     enemy.DestroySelf();
-                    gameManager.Instance.EnemyDefeated(); // Tambahkan score/progress
+                    GameManager.Instance.EnemyDefeated(); // Tambahkan score/progress
                 }
                 else
                 {
@@ -52,7 +52,7 @@ public class Bullet : MonoBehaviour
                 {
                     Debug.Log("Match! Both objects should be destroyed.");
                     enemy.DestroySelf();
-                    gameManager.Instance.EnemyDefeated(); // Tambahkan score/progress
+                    GameManager.Instance.EnemyDefeated(); // Tambahkan score/progress
                 }
                 else
                 {

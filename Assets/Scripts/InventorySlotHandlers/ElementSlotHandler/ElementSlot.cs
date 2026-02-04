@@ -12,7 +12,7 @@ public class ElementSlot : ItemSlot
 
     public GameObject spawnItem(GameObject itemPrefab)
     {
-        if (!isFull && slotLevel <= gameManager.Instance.currentLevel)
+        if (!isFull && slotLevel <= GameManager.Instance.currentLevel)
         {
             //spawn dulu itemnya
             GameObject itemInstance = Instantiate(itemPrefab, transform.position, Quaternion.identity);
@@ -34,7 +34,7 @@ public class ElementSlot : ItemSlot
         {
             Debug.Log("Slot is already filled");
         }
-        else if (slotLevel > gameManager.Instance.currentLevel)
+        else if (slotLevel > GameManager.Instance.currentLevel)
         {
             Debug.Log("Level too low to spawn this slot of elements");
         }

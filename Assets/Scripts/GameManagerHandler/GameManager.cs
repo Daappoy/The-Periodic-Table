@@ -1,7 +1,9 @@
+using System.Runtime.ExceptionServices;
+using TMPro;
 using UnityEngine;
 
 
-public class gameManager : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     public enum GameState
     {
@@ -9,9 +11,19 @@ public class gameManager : MonoBehaviour
         Paused,
         GameOver,
     }
+
+    public enum SpecialSlotState
+    {
+        Normal,
+        Warning
+    }
+    
+    public TextMeshProUGUI scoreText;
     public GameState currentState;
+    public SpecialSlotState specialSlotState;
+    public EnemySpawner enemySpawner;
     public ElementSlotManager elementSlotManager;
-    public static gameManager Instance;
+    public static GameManager Instance;
     public int currentLevel = 2;
     public int enemiesDefeated = 0;
     public int score = 0;
@@ -35,8 +47,9 @@ public class gameManager : MonoBehaviour
         enemiesDefeated++;
         score += 10;
         ScoreManager.Instance.totalScore = score;
-        //ngececk kalo dah bisa level up
-        if (enemiesDefeated == 3)
+        ScoreUpdate();
+        //ngecek kalo dah bisa level up
+        if (enemiesDefeated == 20)
         {
             LevelUp();
         }
@@ -46,6 +59,7 @@ public class gameManager : MonoBehaviour
     {
         currentLevel = 2;
         enemiesDefeated = 0;
+        score = 0;
     }
     [ContextMenu("Manual Level Up")]
     public void LevelUp()
@@ -55,5 +69,10 @@ public class gameManager : MonoBehaviour
         Debug.Log("Level Up! Current Level: " + currentLevel);
         elementSlotManager.ElementSlotIndicator();
         elementSlotManager.AddElementToNewSlot(currentLevel - 1);
+    }
+
+    public void ScoreUpdate()
+    {
+        scoreText.text = "Score: " + ScoreManager.Instance.totalScore.ToString();
     }
 }

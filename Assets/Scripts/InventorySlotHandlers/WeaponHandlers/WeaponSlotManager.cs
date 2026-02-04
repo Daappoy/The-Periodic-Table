@@ -65,6 +65,6 @@ public class WeaponSlotManager : MonoBehaviour
             }
         }
         yield return new WaitForSeconds(2f);
-        enemySpawner.SpawnEnemies();
+        enemySpawner.InitiateSpawnEnemies();
     }
 }
